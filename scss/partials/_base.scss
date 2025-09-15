@@ -1,27 +1,97 @@
 // Base
 
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: $lato;
+	color: $text-primary;
+	line-height: 1.6;
+	background-color: $bg-primary;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
 h1, h2, h3, h4, h5, h6 { 
-	font-family:  $playfair;
-	color: $primary; 
+	font-family: $playfair;
+	color: $primary;
+	font-weight: 600;
+	line-height: 1.2;
+	margin: 0 0 $spacing-md 0;
+}
+
+h1 {
+	font-size: 2.5rem;
+	font-weight: 700;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+h3 {
+	font-size: 1.5rem;
+}
+
+h4 {
+	font-size: 1.25rem;
+}
+
+h5, h6 {
+	font-size: 1.125rem;
 }
 
 a, p, li { 
 	font-family: $lato; 
-	color: $secondary;
-	font-size: em(16);
-	line-height: em(28);
+	color: $text-primary;
+	font-size: 1rem;
+	line-height: 1.6;
 }
 
 a {
+	color: $link-color;
+	text-decoration: none;
+	transition: all 0.2s ease-in-out;
+	
 	&:hover {
-		text-decoration: none!important;
-		color: $primary!important;
-		@include transition(all, 0.2s, ease-in-out);
+		color: $link-hover;
+		text-decoration: none;
 	}
 }
 
-.container {
-    margin: auto;
-    max-width: 662px;
-    padding: 0 20px;
+p {
+	margin: 0 0 $spacing-md 0;
 }
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 $spacing-lg;
+    width: 100%;
+}
+
+// Utility classes
+.text-center {
+	text-align: center;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.mb-0 { margin-bottom: 0; }
+.mb-1 { margin-bottom: $spacing-sm; }
+.mb-2 { margin-bottom: $spacing-md; }
+.mb-3 { margin-bottom: $spacing-lg; }
+.mb-4 { margin-bottom: $spacing-xl; }
+
+.mt-0 { margin-top: 0; }
+.mt-1 { margin-top: $spacing-sm; }
+.mt-2 { margin-top: $spacing-md; }
+.mt-3 { margin-top: $spacing-lg; }
+.mt-4 { margin-top: $spacing-xl; }

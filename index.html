@@ -1,213 +1,352 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Zhengjie Qian - Software Engineer & Data Scientist</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="author" content="Zhengjie Qian">
-	<meta name="description" content="Software Engineer & Data Scientist with experience at Meta, specializing in front-end development, data analysis, and iOS app development.">
-	<link rel="stylesheet" href="css/kube.min.css" />
-	<link rel="stylesheet" href="css/font-awesome.min.css" />
-	<link rel="stylesheet" href="css/custom.min.css" />
-	<link rel="shortcut icon" href="img/favicon.png" />
-	<link href='https://fonts.googleapis.com/css?family=Playfair+Display+SC:700' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
-	<style>
-		.intro h1:before {
-			content: 'Winston';
-		}
-	</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zhengjie Qian - Software Engineer & Data Scientist</title>
+    <meta name="description" content="Software Engineer & Data Scientist with experience at Meta, specializing in front-end development, data analysis, and iOS app development.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-<!-- Navigation -->
-<div class="main-nav">
-	<div class="container">
-		<header class="group top-nav">
-			<div class="navigation-toggle" data-tools="navigation-toggle" data-target="#navbar-1">
-				<span class="logo">DRACO</span>
-			</div>
-			<nav id="navbar-1" class="navbar item-nav">
-				<ul>
-					<li class="active"><a href="#about">About</a></li>
-					<li><a href="#experience">Experience</a></li>
-					<li><a href="#projects">Projects</a></li>
-					<li><a href="#skills">Skills</a></li>
-					<li><a href="#education">Education</a></li>
-				</ul>
-			</nav>
-		</header>
-	</div>
-</div>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">ZQ</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
 
-<!-- Introduction -->
-<div class="intro section" id="about">
-	<div class="container">
-		<p>Hi, I’m Zhengjie Qian</p>
-		<div class="units-row units-split wrap">
-			<div class="unit-20">
-				<img src="img/123.jpg" alt="Avatar">
-			</div>
-			<div class="unit-80">
-				<h1>Software Engineer & Data Scientist<br></h1>
-			</div>
-			<p>
-				Passionate Software Engineer and Data Scientist with experience at Meta, specializing in front-end development, data analysis, and iOS app development. Currently pursuing Master's in Data Science at USC while working on cutting-edge performance optimization and full-stack development projects.
-			</p>
-			<div class="contact-info">
-				<p><strong>Email:</strong> qzjyyds@gmail.com | <strong>Phone:</strong> (+1) 814-699-2603</p>
-				<p><strong>Location:</strong> San Jose, CA | <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/zhengjie-qian-2a024a208" target="_blank">linkedin.com/in/zhengjie-qian-2a024a208</a></p>
-			</div>
-		</div>
-	</div>
-</div>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Hi, I'm Zhengjie Qian
+                </h1>
+                <h2 class="hero-subtitle">Software Engineer & Data Scientist</h2>
+                <p class="hero-description">
+                    Passionate about building innovative solutions and extracting insights from data. 
+                    Currently pursuing Master's in Data Science at USC while working on cutting-edge 
+                    performance optimization and full-stack development projects.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-container">
+                    <img src="img/123.jpg" alt="Zhengjie Qian" class="profile-img">
+                    <div class="image-overlay"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#about">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
 
-<!-- Work Experience -->
-<div class="work section second" id="experience">
-	<div class="container">
-		<h1>Work<br>Experience</h1>
-		
-		<div class="work-item">
-			<h3>Software Engineer Intern - Meta, Performance Group</h3>
-			<p class="work-dates">May 2025 - August 2025</p>
-			<ul class="work-achievements">
-				<li>Improved Admin Tool front-end structure and responsiveness with lazy query rendering</li>
-				<li>Increased end-to-end test coverage from 33% to 56% using Jest</li>
-				<li>Reduced Visual Complete P90 from 4s to 3.43s, increased % Good loads by 14.87%</li>
-				<li>Reduced % Terrible loads by 60.2% through performance optimization</li>
-				<li>Developed tools for PSC cycle improvement</li>
-			</ul>
-		</div>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a dedicated Software Engineer and Data Scientist with a strong background in 
+                        computer science and mathematics. My journey in tech has taken me from web development 
+                        to mobile app creation, and now to the exciting world of data science.
+                    </p>
+                    <p>
+                        Currently pursuing my Master's degree in Data Science at the University of Southern 
+                        California, I'm passionate about leveraging data to solve real-world problems and 
+                        create meaningful impact through technology.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>3+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat">
+                            <h3>10+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat">
+                            <h3>2</h3>
+                            <p>Degrees</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-		<div class="work-item">
-			<h3>Front-End Engineer Intern - Summit Technologies LTD., CO</h3>
-			<p class="work-dates">August 2023 - October 2023</p>
-			<ul class="work-achievements">
-				<li>Built dynamic and responsive web page structures using Vue 3, reducing code duplication by 13.5%</li>
-				<li>Optimized component render performance, decreasing page load time by 17.6%</li>
-				<li>Improved UI responsiveness by 22% and resolved over 20 UI/UX bugs</li>
-				<li>Enhanced scalability and cross-device compatibility with HTML, CSS, JavaScript</li>
-			</ul>
-		</div>
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Work Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Software Engineer Intern - Meta, Performance Group</h3>
+                        <p class="timeline-date">May 2025 - August 2025</p>
+                        <ul>
+                            <li>Improved Admin Tool front-end structure and responsiveness with lazy query rendering</li>
+                            <li>Increased end-to-end test coverage from 33% to 56% using Jest</li>
+                            <li>Reduced Visual Complete P90 from 4s to 3.43s, increased % Good loads by 14.87%</li>
+                            <li>Reduced % Terrible loads by 60.2% through performance optimization</li>
+                            <li>Developed tools for PSC cycle improvement</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Front-End Engineer Intern - Summit Technologies LTD., CO</h3>
+                        <p class="timeline-date">August 2023 - October 2023</p>
+                        <ul>
+                            <li>Built dynamic and responsive web page structures using Vue 3, reducing code duplication by 13.5%</li>
+                            <li>Optimized component render performance, decreasing page load time by 17.6%</li>
+                            <li>Improved UI responsiveness by 22% and resolved over 20 UI/UX bugs</li>
+                            <li>Enhanced scalability and cross-device compatibility with HTML, CSS, JavaScript</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Web Engineer Intern - Dongtie Group LTD., CO</h3>
+                        <p class="timeline-date">June 2022 - September 2022</p>
+                        <ul>
+                            <li>Updated HTML/CSS structures, improving access speed by 22.4%</li>
+                            <li>Reduced server resource consumption by 16.1%</li>
+                            <li>Enhanced backend stability and security</li>
+                            <li>Integrated multilingual interfaces and applets (WeChat, Alipay)</li>
+                            <li>Developed and maintained applications in Unix/Linux environments</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-		<div class="work-item">
-			<h3>Web Engineer Intern - Dongtie Group LTD., CO</h3>
-			<p class="work-dates">June 2022 - September 2022</p>
-			<ul class="work-achievements">
-				<li>Updated HTML/CSS structures, improving access speed by 22.4%</li>
-				<li>Reduced server resource consumption by 16.1%</li>
-				<li>Enhanced backend stability and security</li>
-				<li>Integrated multilingual interfaces and applets (WeChat, Alipay)</li>
-				<li>Developed and maintained applications in Unix/Linux environments</li>
-			</ul>
-		</div>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>iOS Application Development</h3>
+                        <p>Developed four applications using Swift in Xcode: Puzzle Game, Map Guide, Pokémon Album, and Fitness App</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Swift</span>
+                            <span class="tech-tag">Xcode</span>
+                            <span class="tech-tag">iOS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                View Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Data Analysis Dashboard</h3>
+                        <p>Created interactive dashboards for data visualization and analysis using modern web technologies</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Tableau</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                View Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Web Performance Optimization</h3>
+                        <p>Optimized web applications for better performance and user experience</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">Performance</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                View Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-	</div>
-</div>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">JavaScript</span>
+                        <span class="skill-item">Python</span>
+                        <span class="skill-item">HTML/CSS</span>
+                        <span class="skill-item">SQL</span>
+                        <span class="skill-item">C++</span>
+                        <span class="skill-item">TypeScript</span>
+                        <span class="skill-item">R</span>
+                        <span class="skill-item">Swift</span>
+                        <span class="skill-item">Java</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-chart-line"></i> Data Analysis</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">Data Mining</span>
+                        <span class="skill-item">Predictive Analytics</span>
+                        <span class="skill-item">Bayesian Inference</span>
+                        <span class="skill-item">Statistical Learning</span>
+                        <span class="skill-item">Machine Learning</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Development Tools</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">React</span>
+                        <span class="skill-item">Vue.js</span>
+                        <span class="skill-item">Node.js</span>
+                        <span class="skill-item">Git</span>
+                        <span class="skill-item">Docker</span>
+                        <span class="skill-item">AWS</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-database"></i> Databases & Visualization</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">MySQL</span>
+                        <span class="skill-item">PostgreSQL</span>
+                        <span class="skill-item">MongoDB</span>
+                        <span class="skill-item">Tableau</span>
+                        <span class="skill-item">Matplotlib</span>
+                        <span class="skill-item">D3.js</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!-- Projects -->
-<div class="projects section second" id="projects">
-	<div class="container">
-		<h1>Projects</h1>
-		
-		<div class="project-item">
-			<h3>iOS Application Development</h3>
-			<p class="project-dates">September 2022 - November 2022</p>
-			<ul class="project-details">
-				<li>Developed four applications using Swift in Xcode: Puzzle Game, Map Guide, Pokémon Album, and Fitness App</li>
-				<li>Published the Fitness App to Google Play, generating ad revenue</li>
-				<li>Demonstrated full-cycle app development from concept to deployment</li>
-				<li>Implemented user-friendly interfaces and engaging gameplay mechanics</li>
-			</ul>
-		</div>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>I'm always interested in new opportunities and exciting projects. Feel free to reach out!</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>qzjyyds@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>(+1) 814-699-2603</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>San Jose, CA</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/zhengjie-qian-2a024a208" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/zhengjieqian" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:qzjyyds@gmail.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
-	</div>
-</div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Zhengjie Qian. All rights reserved.</p>
+        </div>
+    </footer>
 
-<!-- Technical Skills -->
-<div class="skills section second" id="skills">
-	<div class="container">
-		<h1>Technical<br>Skills</h1>
-		<ul class="skill-list list-flat">
-			<li>Programming Languages</li>
-			<li>JavaScript, Python, HTML, CSS, SQL, C++, TypeScript, R, MySQL, Swift UI, Java, Linux</li>
-		</ul>
-		<ul class="skill-list list-flat">
-			<li>Data Analysis</li>
-			<li>Data Mining, Predictive Analytics, Bayesian Inference, Statistical Learning</li>
-		</ul>
-		<ul class="skill-list list-flat">
-			<li>Visualization</li>
-			<li>Matplotlib, Tableau</li>
-		</ul>
-		<ul class="skill-list list-flat">
-			<li>Development</li>
-			<li>React, Vue3, iOS Apps</li>
-		</ul>
-		<ul class="skill-list list-flat">
-			<li>Core Skills</li>
-			<li>Data Structures and Algorithms, Performance Optimization, Full-Stack Development</li>
-		</ul>
-	</div>
-</div>
-
-<!-- Education -->
-<div class="education section second" id="education">
-	<div class="container">
-		<h1>Education</h1>
-		
-		<div class="education-item">
-			<h3>University of Southern California</h3>
-			<p class="education-degree">Master of Science, Data Science</p>
-			<p class="education-location">Los Angeles, CA</p>
-			<p class="education-dates">January 2024 - December 2025</p>
-		</div>
-
-		<div class="education-item">
-			<h3>The Pennsylvania State University</h3>
-			<p class="education-degree">Bachelor of Science, Computer Science - Minor in Mathematics</p>
-			<p class="education-location">State College, PA</p>
-			<p class="education-dates">August 2019 - May 2023</p>
-		</div>
-
-	</div>
-</div>
-
-<!--	 Quote -->
-<!--	<div class="quote">-->
-<!--		<div class="container text-centered">-->
-<!--			<h1>fight against the ugliness.</h1>-->
-<!--		</div>-->
-<!--	</div>-->
-
-<footer>
-	<div class="container">
-		<div class="units-row">
-			<div class="unit-50">
-				<p>Handcrafted by Zhengjie Qian</p>
-			</div>
-			<div class="unit-50">
-				<ul class="social list-flat right">
-					<li><a href="mailto:qzjyyds@gmail.com"><i class="fa fa-send"></i></a></li>
-					<li><a href="https://zhengjieqian.github.io/Personal-Web/" target="_blank"><i class="fa fa-globe"></i></a></li>
-					<li><a href="https://www.linkedin.com/in/zhengjie-qian-2a024a208/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-					<li><a href="https://github.com/zhengjieqian" target="_blank"><i class="fa fa-github"></i></a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
-</footer>
-
-<!-- Javascript -->
-<script src="js/jquery.min.js"></script>
-<script src="js/typed.min.js"></script>
-<script src="js/kube.min.js"></script>T
-<script src="js/site.js"></script>
-<script>
-	function newTyped(){}$(function(){$("#typed").typed({
-
-		strings: ["far northern sky", "your galaxy", "everywhere"],
-
-		typeSpeed:90,backDelay:700,contentType:"html",loop:!0,resetCallback:function(){newTyped()}}),$(".reset").click(function(){$("#typed").typed("reset")})});
-</script>
+    <script src="script.js"></script>
 </body>
 </html>

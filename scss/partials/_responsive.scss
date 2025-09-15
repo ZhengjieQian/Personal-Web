@@ -1,15 +1,116 @@
 // Responsive
 
-@media only screen and (max-width: 767px) {
-    .intro { 
-	    img{
-	        display: block;
-	        margin-left: auto;
-	        margin-right: auto;
-	    }
-    }
+// Mobile First Approach
+@media only screen and (max-width: 768px) {
+	.container {
+		padding: 0 $spacing-md;
+	}
 
+	// Navigation
+	.main-nav {
+		nav ul {
+			flex-direction: column;
+			gap: $spacing-sm;
+			text-align: center;
+		}
+	}
+
+	// Intro Section
+	.intro {
+		.intro-content {
+			flex-direction: column;
+			text-align: center;
+			gap: $spacing-xl;
+		}
+
+		.intro-text {
+			order: 2;
+		}
+
+		.intro-image {
+			order: 1;
+		}
+
+		h1 {
+			font-size: 2.5rem;
+		}
+
+		h2 {
+			font-size: 1.25rem;
+		}
+	}
+
+	// Sections
+	.section {
+		padding: $spacing-2xl 0;
+		
+		.container h1 {
+			font-size: 2rem;
+		}
+	}
+
+	// Work, Projects, Education Items
+	.work-item,
+	.project-item,
+	.education-item {
+		padding: $spacing-lg;
+		margin-bottom: $spacing-lg;
+	}
+
+	// Skills
+	.skills .skill-list {
+		padding: $spacing-lg;
+	}
+
+	// Contact Info
+	.contact-info {
+		p {
+			flex-direction: column;
+			align-items: flex-start;
+			gap: $spacing-xs;
+		}
+	}
+
+	// Footer
 	footer {
-		text-align: center;
+		.container {
+			flex-direction: column;
+			text-align: center;
+			gap: $spacing-md;
+		}
+
+		.social {
+			justify-content: center;
+		}
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.intro {
+		h1 {
+			font-size: 2rem;
+		}
+
+		h2 {
+			font-size: 1.125rem;
+		}
+
+		.intro-description {
+			font-size: 1rem;
+		}
+	}
+
+	.section .container h1 {
+		font-size: 1.75rem;
+	}
+
+	.work-item,
+	.project-item,
+	.education-item {
+		padding: $spacing-md;
+	}
+
+	.skills .skill-list {
+		padding: $spacing-md;
 	}
 }
