@@ -1,0 +1,20 @@
+{
+  "name": "personal-website",
+  "version": "1.0.0",
+  "description": "Personal portfolio website with auto-reload development server",
+  "main": "index.html",
+  "scripts": {
+    "dev": "concurrently \"npm run watch-scss\" \"npm run serve\"",
+    "watch-scss": "sass --watch scss/custom.scss:css/custom.css",
+    "serve": "live-server --port=3000 --open=/index.html",
+    "build": "sass scss/custom.scss:css/custom.css --style=compressed"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "live-server": "^1.2.2",
+    "sass": "^1.69.5"
+  },
+  "keywords": ["portfolio", "website", "scss", "auto-reload"],
+  "author": "Zhengjie Qian",
+  "license": "MIT"
+}
