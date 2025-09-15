@@ -147,6 +147,16 @@ body {
     line-height: 1.2;
 }
 
+.hero-title .last-name {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 800;
+    display: inline-block;
+    margin-top: 0.2rem;
+}
+
 .highlight {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     -webkit-background-clip: text;
@@ -721,6 +731,10 @@ section {
     .hero-title {
         font-size: 2.5rem;
     }
+    
+    .hero-title .last-name {
+        margin-top: 0.1rem;
+    }
 
     .hero-buttons {
         justify-content: center;
@@ -766,6 +780,10 @@ section {
 @media (max-width: 480px) {
     .hero-title {
         font-size: 2rem;
+    }
+    
+    .hero-title .last-name {
+        margin-top: 0.05rem;
     }
 
     .section-title {
